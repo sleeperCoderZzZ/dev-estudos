@@ -1,0 +1,122 @@
+* {
+
+padding: 15px;
+margin: 8px;
+
+}
+
+body, html, main{
+
+    max-width: 1366px;
+    min-height: 768px;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container-texto  {
+        margin: 60px auto 0; /* Ajuste do topo para o cabeçalho fixo */
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2em;
+        line-height: 1.8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+
+@keyframes transicaoCorFodaNav {
+
+    from {background-color: rgb(12, 97, 12);}
+    to {background-color: rgb(135, 210, 21);}
+
+}
+
+@keyframes transicaoFodaTamanhoNav {
+
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+.nav-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation-name: transicaoCorFodaNav;
+    animation-name: transicaoFodaTamanhoNav;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    background-color: greenyellow;
+    box-shadow: 2px 2px 2px 2px rgb(77, 114, 21);
+    height: 4vmax;
+    width: 100%;
+    padding-left: 3vmax;
+
+}
+
+main{
+
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    animation-name: transicaoFodaTamanhoMain;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes transicaoFodaTamanhoContainerTexto {
+
+    from {width: 0%; height: 0%;}
+    to {width: 55%; height: 70%;}
+}
+
+@keyframes transicaoFodaTamanhoMain {
+
+    from {width: 0%; top: 0%;}
+    to {width: 100%; bottom: 100%;}
+}
+
+.container-texto {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    width: 55%;
+    height: 70%;
+    animation-name: transicaoFodaTamanhoContainerTexto;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}
+
+footer{
+
+    background-color: yellow;
+    animation-name: transicaoFodaTamanhoNav;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+
+}
