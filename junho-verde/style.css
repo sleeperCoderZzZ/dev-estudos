@@ -1,122 +1,204 @@
-* {
+html {
 
-padding: 15px;
-margin: 8px;
+    background-image: linear-gradient(
+    40deg,
+    hsl(113deg 63% 11%) 1%,
+    hsl(108deg 57% 13%) 40%,
+    hsl(102deg 52% 15%) 48%,
+    hsl(97deg 48% 18%) 51%,
+    hsl(92deg 43% 21%) 51%,
+    hsl(86, 39%, 24%) 50%,
+    hsl(82deg 35% 27%) 50%,
+    hsl(76deg 31% 30%) 49%,
+    hsl(71deg 27% 33%) 49%,
+    hsl(66deg 24% 37%) 52%,
+    hsl(61deg 21% 40%) 60%,
+    hsl(55deg 18% 44%) 99%
+);
 
-}
+background-image: url(./img/pexels-timmossholder-974314.jpg);
 
-body, html, main{
-
-    max-width: 1366px;
-    min-height: 768px;
-}
-
-@media (min-width: 1024px) {
-    body {
-        background-color: #ffffff;
-    }
-
-    .container-texto  {
-        margin: 60px auto 0; /* Ajuste do topo para o cabeçalho fixo */
-        display: flex;
-    }
-
-    h1 {
-        font-size: 2.5em;
-        text-align: center;
-    }
-
-    p {
-        font-size: 1.2em;
-        line-height: 1.8;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #333;
-        color: #fff;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }
-}
-
-
-@keyframes transicaoCorFodaNav {
-
-    from {background-color: rgb(12, 97, 12);}
-    to {background-color: rgb(135, 210, 21);}
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
 }
 
-@keyframes transicaoFodaTamanhoNav {
 
-    from {width: 0%;}
-    to {width: 100%;}
+body, ul, li, p {
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: arial;
+
 }
 
-.nav-container {
+h1 {
 
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(70, 80, 67);
+    z-index: 1000;
+
+}
+
+.caixa1{
+
+    background-color: hsla(86, 39%, 24%, 0.996);
+    width: 750px;
+    height: 450px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    color:white;
+    /* box-shadow: 2px 2px 2px black; */
+    font-size: xx-large;
+    border-radius: 10px;
+    border-style: hidden;
+    text-shadow: 2px 2px 2px rgb(70, 80, 67);
+}
+
+.caixa1 > h1{
+    font-family: amiko;
+}
+
+
+.caixa1 > p {
+    margin-left: 20px;
+    font-size: x-large;
+    color: black ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.caixa2{
+
+    background-image: url(./img/lobo1.jpg);
+    background-color: hsl(86, 39%, 24%);
+    width: 750px;
+    height: 450px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    color:white;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+
+}
+
+.footer {
+
+    margin-top: 100px;
+    background: #1d1e20;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
     justify-content: center;
+    z-index: 1000;
+    color: white;
+    background-image: linear-gradient(
+  95deg,
+  hsl(91deg 51% 14%) 0%,
+  hsl(73deg 50% 15%) 102%,
+  hsl(54deg 52% 16%) 100%
+);
+
+}
+
+.header {
+
+    background: #1d1e20;
+    background-image: linear-gradient(
+  95deg,
+  hsl(91deg 51% 14%) 0%,
+  hsl(73deg 50% 15%) 102%,
+  hsl(54deg 52% 16%) 100%
+);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
     align-items: center;
+    z-index: 1000;
+}
 
-    animation-name: transicaoCorFodaNav;
-    animation-name: transicaoFodaTamanhoNav;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    background-color: greenyellow;
-    box-shadow: 2px 2px 2px 2px rgb(77, 114, 21);
-    height: 4vmax;
-    width: 100%;
-    padding-left: 3vmax;
+a {
+
+    color: white;
 
 }
 
-main{
-
-    background-color: blue;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    animation-name: transicaoFodaTamanhoMain;
-    animation-duration: 4s;
-    animation-timing-function: ease;
-
-}
-
-@keyframes transicaoFodaTamanhoContainerTexto {
-
-    from {width: 0%; height: 0%;}
-    to {width: 55%; height: 70%;}
-}
-
-@keyframes transicaoFodaTamanhoMain {
-
-    from {width: 0%; top: 0%;}
-    to {width: 100%; bottom: 100%;}
-}
-
-.container-texto {
+.menu {
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: aqua;
-    width: 55%;
-    height: 70%;
-    animation-name: transicaoFodaTamanhoContainerTexto;
-    animation-duration: 4s;
-    animation-timing-function: ease;
-}
-
-footer{
-
-    background-color: yellow;
-    animation-name: transicaoFodaTamanhoNav;
-    animation-duration: 4s;
-    animation-timing-function: ease;
 
 }
+
+.menu li {
+
+    margin: 10px;
+
+}
+
+
+.menu li a {
+
+    display: block;
+    padding: 10px;
+
+}
+
+.conteudo-secao {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.conteudo-secao > div {
+
+    flex: 1 1 200px;
+    margin: 10px;
+
+}
+
+/* .grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 780px;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.grid > div {
+
+    align-content: center;
+
+}
+
+.grid > :nth-child(n + 4) {
+
+    background-color: rgb(58, 143, 143);
+    grid-column: 1;
+}
+
+.grid > :nth-child(n + 6) {
+
+    background-color: rgb(113, 56, 46);
+    color: white;
+    box-shadow: 2px 2px 2px black;
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+
+} */
