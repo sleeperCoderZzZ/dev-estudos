@@ -90,18 +90,13 @@ main {
 .item-header h2{
 
     color: #62a228;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     margin: 0em;
+    letter-spacing: .1em;
+    font-family: cursive;
 }
 
-.item-header h2{
-
-    color: #62a228;
-    font-size: 3em;
-    text-align: center;
-    margin: 0em;
-}
 
 .item-content {
 
