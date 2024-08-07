@@ -57,7 +57,7 @@ main {
 
     display: flex;
     justify-content: center;
-    height: 70vh;
+    height: 75vh;
 
 }
 
@@ -120,7 +120,7 @@ main {
 
 .secao-imagen picture img {
 
-    height: 50vh;
+    height: 60vh;
 }
 
 .secao-imagen picture {
@@ -138,12 +138,13 @@ main {
   hsl(92deg 72% 27%) 50%,
   hsl(92deg 98% 16%) 100%
 );
-height: 70vh;
+height: 75vh;
+align-content: center;
 }
 
 footer {
     background-color: #efefef;
-    height: 15vh;
+    height: 10vh;
     align-content: center;
     text-align: center;
 }
